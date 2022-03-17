@@ -7,6 +7,20 @@ public class Main {
     }
 
     public static boolean numberEquals(String a, String b) {
-        return Integer.parseInt(a) == Integer.parseInt(b);
+        String value1 = "";
+        String value2 = "";
+        for (int i = 0; i < a.length(); i++){
+            if (!Character.isDigit(a.charAt(i))) {
+            } else {
+                value1 += a.charAt(i);
+            }
+        }
+        for (int i = 0; i < b.length(); i++){
+            if (!Character.isDigit(b.charAt(i))) {
+            } else {
+                value2 += b.charAt(i);
+            }
+        }
+        return Integer.parseInt(value1) == Integer.parseInt(value2);
     }
 }
