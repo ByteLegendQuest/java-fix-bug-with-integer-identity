@@ -10,14 +10,12 @@ public class Main {
         String value1 = "";
         String value2 = "";
         for (int i = 0; i < a.length(); i++){
-            if (!Character.isDigit(a.charAt(i))) {
-            } else {
+            if (Character.isDigit(a.charAt(i))) {
                 value1 += a.charAt(i);
             }
         }
         for (int i = 0; i < b.length(); i++){
-            if (!Character.isDigit(b.charAt(i))) {
-            } else {
+            if (Character.isDigit(b.charAt(i))) {
                 value2 += b.charAt(i);
             }
         }
