@@ -7,6 +7,12 @@ public class Main {
     }
 
     public static boolean numberEquals(String a, String b) {
-        return a.contains(b) || b.contains(a);
+        boolean flag;
+        if (a.length() > b.length()) {
+            flag = a.contains(b);
+        }else {
+            flag = b.contains(a);
+        }
+        return flag;
     }
 }
