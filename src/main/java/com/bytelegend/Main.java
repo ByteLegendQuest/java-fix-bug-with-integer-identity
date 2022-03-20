@@ -7,14 +7,6 @@ public class Main {
     }
 
     public static boolean numberEquals(String a, String b) {
-        boolean flag = false;
-        if (a != null && b != null) {
-            if (a.length() > b.length()) {
-                flag = a.contains(b);
-            }else {
-                flag = b.contains(a);
-            }
-        }
-        return flag;
+        return Integer.valueOf(a).equals(Integer.valueOf(b));
     }
 }
