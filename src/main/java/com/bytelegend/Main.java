@@ -24,6 +24,6 @@ public class Main {
         else bb = b;
 
 
-        return ta * Integer.valueOf(a) ==  tb * Integer.valueOf(b);
+        return ta * Integer.valueOf(aa) ==  tb * Integer.valueOf(bb);
     }
 }
