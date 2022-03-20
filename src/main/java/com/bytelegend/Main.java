@@ -7,6 +7,21 @@ public class Main {
     }
 
     public static boolean numberEquals(String a, String b) {
-        return Integer.valueOf(a) == Integer.valueOf(b);
+        char fa = a.charAt(0), fb = b.charAt(0);
+        String aa, bb;
+        int ta = 1, tb = 1;
+        if (fa == '+') aa = a.substring(1);
+        else if (fa == '-') {
+            aa = a.substring(1);
+            ta = -1;
+        } else aa = a;
+
+        if (fb == '+') bb = b.substring(1);
+        else if (fb == '-') {
+            bb = b.substring(1);
+            tb = -1;
+        } else bb = b;
+
+        return ta * Integer.valueOf( aa ) ==  tb * Integer.valueOf( bb );
     }
 }
