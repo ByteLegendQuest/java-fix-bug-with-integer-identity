@@ -7,6 +7,6 @@ public class Main {
     }
 
     public static boolean numberEquals(String a, String b) {
-        return a.contains(b.replaceAll("\\D+", "")) || b.contains(a.replaceAll("\\D+", ""));
+        return b.contains(a);
     }
 }
