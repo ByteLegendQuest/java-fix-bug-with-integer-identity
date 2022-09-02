@@ -7,6 +7,8 @@ public class Main {
     }
 
     public static boolean numberEquals(String a, String b) {
-        return Integer.valueOf(a) == Integer.valueOf(b);
+        return Integer.parseInt(a) == Integer.parseInt(b);
     }
+    //Integer.valueOf()除了调用parseInt()，又经过包装，返回的是Integer对象，
+    //而Integer.parseInt()仅调用parseInt()，返回的是int类型的值
 }
