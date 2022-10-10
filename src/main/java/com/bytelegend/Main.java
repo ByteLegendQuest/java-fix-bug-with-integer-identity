@@ -7,6 +7,10 @@ public class Main {
     }
 
     public static boolean numberEquals(String a, String b) {
-        return Integer.valueOf(a) == Integer.valueOf(b);
+        if (a == null && b == null)
+            return true;
+        if (a == null || b == null)
+            return false;
+        return Integer.parseInt(a) == Integer.parseInt(b);
     }
 }
