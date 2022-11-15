@@ -7,7 +7,6 @@ public class Main {
     }
 
     public static boolean numberEquals(String a, String b) {
-        b = b.replace("\D","");
         return Integer.parseInt(a) == Integer.parseInt(b);
     }
 }
