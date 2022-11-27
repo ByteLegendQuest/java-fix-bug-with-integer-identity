@@ -7,15 +7,6 @@ public class Main {
     }
 
     public static boolean numberEquals(String a, String b) {
-        int aa = 0,bb = 0;
-        if (a.contains("-")){
-            a=a.replace("-", "");
-            aa = -Integer.valueOf(a);
-        }
-        if (b.contains("-")){
-            b=b.replace("-", "");
-            bb = -Integer.valueOf(b);
-        }
-        return aa == bb;
+        return Integer.valueOf(a) == Integer.valueOf(b);
     }
 }
