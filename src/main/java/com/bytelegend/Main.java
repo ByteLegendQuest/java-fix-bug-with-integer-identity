@@ -7,6 +7,15 @@ public class Main {
     }
 
     public static boolean numberEquals(String a, String b) {
-        return true;
+        //过滤一下，用新的String
+        int x = -1;
+        int y = -1;
+        try{
+            x = Integer.parseInt(a);
+            y = Integer.parseInt(b);
+        }catch(Exception e) {
+            y = Integer.parseInt(b.substring(1,b.length()));
+        }
+        return x==y;
     }
 }
