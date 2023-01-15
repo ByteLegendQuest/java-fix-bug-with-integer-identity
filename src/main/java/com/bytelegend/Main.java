@@ -7,6 +7,7 @@ public class Main {
     }
 
     public static boolean numberEquals(String a, String b) {
-        return Integer.valueOf(a) == Integer.valueOf(b);
+        return Integer.valueOf(a).intValue() == Integer.valueOf(b);
+
     }
 }
