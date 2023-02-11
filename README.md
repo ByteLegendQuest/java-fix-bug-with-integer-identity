@@ -7,7 +7,7 @@
 
 The intention of [src/main/java/com/bytelegend/Main.java](https://github.com/ByteLegendQuest/java-fix-bug-with-integer-identity/blob/main/src/main/java/com/bytelegend/Main.java) `numberEquals` method is to check if two strings
 contain same numbers, e.g. `a` is `1234`, `b` is `+1234`, `numberEquals(a,b)` should return `true`.
-However there is a but in `numberEquals` method, please fix it so the program runs with output:
+However there is a bug in `numberEquals` method, please fix it so the program runs with output:
 
 ```
 true
