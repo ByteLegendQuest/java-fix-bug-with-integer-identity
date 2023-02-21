@@ -6,7 +6,7 @@ public class Main {
         System.out.println(numberEquals("1234", "1234"));
     }
 
-    public static boolean numberEquals(String a, String b) throws NumberFormatException {
-        return Integer.parseInt(a) == Integer.parseInt(b);
+    public static boolean numberEquals(String a, String b) {
+        return Integer.valueOf(a) == Integer.valueOf(b);
     }
 }
