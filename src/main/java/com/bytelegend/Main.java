@@ -7,6 +7,6 @@ public class Main {
     }
 
     public static boolean numberEquals(String a, String b) throws NumberFormatException {
-        return Integer.parseInt(a).equals(Integer.parseInt(b));
+        return Integer.parseInt(a) == Integer.parseInt(b);
     }
 }
